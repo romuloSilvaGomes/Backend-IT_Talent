@@ -1,6 +1,14 @@
 # Usa a imagem oficial do Node.js baseada no Debian
 FROM node:22
 
+
+ENV MYSQL_IP=172.17.0.3
+ENV APP_PORT=3000
+ENV MYSQL_DATABASE=BANCO_DADOS_IT_TALENT
+ENV MYSQL_USER=root
+ENV MYSQL_ROOT_PASSWORD=20252025
+ENV MYSQL_PORT=3306
+
 # Define o diretório de trabalho dentro do container
 WORKDIR /app
 
